@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.megalobiz.youtubemockup.UploadPlaylistsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView11"
+        android:src="@drawable/scn_13_uploads_playlists" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSideMenu"
+        android:alpha="0"
+        android:onClick="onSideMenu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        android:alpha="0"
+        android:onClick="onSearch"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnChannels"
+        android:alpha="0"
+        android:layout_marginLeft="120dp"
+        android:onClick="onChannels"
+        android:layout_alignTop="@+id/btnVideos"
+        android:layout_toStartOf="@+id/btnAbout" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVideos"
+        android:alpha="0"
+        android:layout_marginLeft="0dp"
+        android:onClick="onVideos"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAbout"
+        android:alpha="0"
+        android:layout_marginLeft="10dp"
+        android:onClick="onAbout"
+        android:layout_alignTop="@+id/btnChannels"
+        android:layout_alignStart="@+id/btnSearch"
+        android:nestedScrollingEnabled="false" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.megalobiz.youtubemockup.UploadChannelsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView12"
+        android:src="@drawable/scn_14_uploads_channels" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSideMenu"
+        android:alpha="0"
+        android:onClick="onSideMenu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        android:alpha="0"
+        android:onClick="onSearch"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVideos"
+        android:alpha="0"
+        android:onClick="onVideos"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlaylists"
+        android:alpha="0"
+        android:onClick="onPlaylists"
+        android:layout_alignTop="@+id/btnVideos"
+        android:layout_toEndOf="@+id/btnVideos"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAbout"
+        android:alpha="0"
+        android:onClick="onAbout"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/btnPlaylists"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
